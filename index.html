@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unit Converter</title>
+
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="logo-container">
+        <img src="images/logo.png" alt="Unit Converter Logo" class="logo" />
+        <h1>Unit Converter</h1>
+      </a>
+      <nav>
+        <button id="menuToggle" class="toggle-btn">
+          <svg
+            class="burger-icon"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 17 14"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15"
+            />
+          </svg>
+        </button>
+
+        <ul class="nav-list" id="navMenu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#converters">Converters</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home">
+        <div class="vision-mission">
+          <h2>Vision & Mission</h2>
+          <p>
+            Our vision is to provide a simple, accurate, and user-friendly
+            conversion tool for everyone.
+          </p>
+          <p>
+            Our mission is to make unit conversion accessible and easy for
+            students, professionals, and everyday users.
+          </p>
+        </div>
+      </section>
+
+      <section id="converters">
+        <h2>Convert Units</h2>
+        <div class="converter-container">
+          <select id="conversionType">
+            <option value="data">Data Storage</option>
+            <option value="distance">Distance</option>
+            <option value="weight">Weight</option>
+            <option value="temperature">Temperature</option>
+            <option value="volume">Volume</option>
+          </select>
+
+          <div class="conversion-inputs">
+            <input type="number" id="inputValue" placeholder="Enter value" />
+            <select id="fromUnit"></select>
+            <span>to</span>
+            <select id="toUnit"></select>
+            <button onclick="convert()">Convert</button>
+          </div>
+
+          <div class="result" id="result">Result will appear here</div>
+        </div>
+      </section>
+
+      <section id="about">
+        <h2>About the Developer</h2>
+        <p>
+          Hello! I'm <strong>[Your Name]</strong>, a passionate web developer
+          dedicated to building intuitive and user-friendly applications. I
+          specialize in <strong>frontend development</strong>, with expertise in
+          HTML, CSS, JavaScript, and frameworks like Next.js and React.
+        </p>
+        <p>
+          This Unit Converter project was created to provide a
+          <strong>simple, efficient, and accessible</strong> tool for anyone who
+          needs quick unit conversions. My goal is to
+          <strong>continuously improve</strong> and expand the project's
+          functionality based on user feedback.
+        </p>
+      </section>
+
+      <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+          <input type="text" placeholder="Name" required />
+          <input type="email" placeholder="Email" required />
+          <textarea placeholder="Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2025 Unit Converter. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
